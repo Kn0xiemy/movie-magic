@@ -2,8 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 
-const homeController = require('./controllers/homeController');
 const movieController = require('./controllers/movieController');
+const homeController = require('./controllers/homeController');
 
 router.use(homeController);
 router.use(movieController);
