@@ -13,14 +13,15 @@
                                 <h1>{{{title}}}</h1>
                                 <h2>Genre: {{{genre}}}</h2>
                                 <p>Description: {{{description}}}</p>
-                                <a href="#" class="details">Details</a>
+                                <a href="/movies/{{_id}}" class="details">Details</a>
                             </div>
                         </div>
-                    <!-- If there are still no posts in the database display: -->
-                    <!-- <div class="no-posts">
-                        <p class="no-offer">There are no posts yet...</p>
-                    </div> -->
                 </div>
+                {{else}}
+                    <div class="no-posts">
+                        <p class="no-offer">There are no posts yet...</p>
+                    </div>
+                    {{/each}}
             </section>
         <footer>
             © JS Back-End Workshop
